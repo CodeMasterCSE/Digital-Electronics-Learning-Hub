@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return false;
         }
     }
-
+// ABC
     function updateOutput() {
         const output = getGateOutput();
         updateLED(outputLed, output);

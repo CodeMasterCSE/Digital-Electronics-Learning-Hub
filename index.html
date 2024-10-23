@@ -10,10 +10,10 @@
             flex-direction: column;
             align-items: center;
             padding: 2rem;
-            height: 100vh;
             margin: 0;
             background-color: #f4f4f4;
             font-family: 'Arial', sans-serif;
+            overflow: hidden;
         }
 
         .landing-container {
@@ -83,8 +83,18 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                overflow-y: auto;
+                height: auto;
+            }
+
+            .landing-container {
+                width: 90%;
+            }
+
             .card {
-                width: 80%;
+                width: 100%;
+                margin: 0.5rem 0;
             }
         }
     </style>
@@ -131,4 +141,3 @@
     </div>
 </body>
 </html>
-

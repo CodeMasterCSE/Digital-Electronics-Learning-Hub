@@ -1,11 +1,11 @@
 # Digital-Electronics-Learning-Hub
-##Project Description: 
+##Project Description:<br> 
 In the era of technology, understanding the basis of digital electronics serves as the foundation for students in Computer Science and related fields of study. Thus, our project, Digital Electronics Learning Hub, aims to be a dynamic and interactive online and specifically learning platform for students in computer science and related fields in order to be introduced to basic digital electronics.
 
-##Objectives: 
+##Objectives:<br>
 The objectives of the Digital Electronics Learning Hub are to break down complex ideas in digital electronics to make them understandable and enjoyable for first-timers. We propose to achieve this with the following key features:
 
-##Interactive Learning Modules: 
+##Interactive Learning Modules:<br> 
 The site will have a series of modules on topics like basic Logic Gates, Boolean Algebra, Number Systems, Combinational and Sequential circuits, and Flip Flops. The modules will be short, with real-life interactive simulations.
 Graphics Simulations:
 

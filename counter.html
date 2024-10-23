@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Binary Counter Simulator</title>
+    <link rel="stylesheet" href="counter.css">
+</head>
+<body>
+    <a href="index.html" class="back-button" style="position: absolute; top: 10px; left: 10px; padding: 10px; background-color: #007BFF; color: white; text-align: center; text-decoration: none; border-radius: 5px;">Back</a>
+    <div class="card">
+        <div class="card-header">
+            <h1 class="card-title">Binary Counter Simulator</h1>
+            <p class="card-description">Increment or decrement to see Binary and Decimal values</p>
+        </div>
+        <div class="card-content">
+            <div class="led-container" aria-label="Binary number representation">
+                <div class="led" data-position="3" role="img" aria-label="Bit 3 is off">0</div>
+                <div class="led" data-position="2" role="img" aria-label="Bit 2 is off">0</div>
+                <div class="led" data-position="1" role="img" aria-label="Bit 1 is off">0</div>
+                <div class="led" data-position="0" role="img" aria-label="Bit 0 is off">0</div>
+            </div>
+            <div class="binary-display" aria-live="polite">Binary: 0000</div>
+            <div class="decimal-display">Decimal: 0</div>
+            <div class="button-container">
+                <button id="decrement" aria-label="Decrement">-</button>
+                <button id="increment" aria-label="Increment">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="counter.js"></script>
+</body>
+</html>

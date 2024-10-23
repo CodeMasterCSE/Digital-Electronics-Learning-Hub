@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Logic Gates</title>
+    <link rel="stylesheet" href="logic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <a href="index.html" class="back-button" style="position: absolute; top: 10px; left: 10px; padding: 10px; background-color: #007BFF; color: white; text-align: center; text-decoration: none; border-radius: 5px;">Back</a>
+    <div class="container">
+        <h1>Interactive Logic Gates</h1>
+        
+        <div class="card">
+            <div class="card-header">
+                <h2>Select Logic Gate</h2>
+                <p>Choose the logic gate you want to experiment with</p>
+            </div>
+            <div class="card-content">
+                <div class="gate-options">
+                    <button class="gate-button" data-gate="AND">
+                        AND Gate
+                    </button>
+                    <button class="gate-button" data-gate="OR">
+                        OR Gate
+                    </button>
+                    <button class="gate-button" data-gate="NOT">
+                        NOT Gate
+                    </button>
+                    <button class="gate-button" data-gate="NAND">
+                        NAND Gate
+                    </button>
+                    <button class="gate-button" data-gate="NOR">
+                        NOR Gate
+                    </button>
+                    <button class="gate-button" data-gate="XOR">
+                        XOR Gate
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Inputs</h2>
+                    <p>Toggle the switches to change the inputs</p>
+                </div>
+                <div class="card-content">
+                    <div class="input-group">
+                        <label for="input1">
+                            <span class="led" id="led1"></span>
+                            Input 1
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox" id="input1">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="input-group" id="input2Group">
+                        <label for="input2">
+                            <span class="led" id="led2"></span>
+                            Input 2
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox" id="input2">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 id="gateTitle">Select a Gate</h2>
+                    <p id="gateDescription">Please select a gate to see the output.</p>
+                </div>
+                <div class="card-content">
+                    <div class="output">
+                        <span class="led" id="outputLed"></span>
+                        Output: <span id="outputValue">N/A</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>

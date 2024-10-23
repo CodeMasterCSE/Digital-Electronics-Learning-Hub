@@ -1,62 +1,23 @@
-# Project Title
+# Digital Electronics Learning Hub
 
-Simple overview of use/purpose.
+A website to help the students to understand and learn basics of Digital Electronics.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+In the era of technology, understanding the basis of digital electronics serves as the foundation for students in Computer Science and related fields of study. Thus, our project, Digital Electronics Learning Hub, aims to be a dynamic and interactive online and specifically learning platform for students in computer science and related fields in order to be introduced to basic digital electronics.
 
-## Getting Started
+## Objectives
 
-### Dependencies
+The objectives of the Digital Electronics Learning Hub are to break down complex ideas in digital electronics to make them understandable and enjoyable for first-timers. We propose to achieve this with the following key features:
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+### Interactive Learning Modules
 
-### Installing
+The site will have a series of modules on topics like basic Logic Gates, Boolean Algebra, Truth Table generator, Number Systems, Combinational and Sequential circuits, and Flip Flops. The modules will be short, with real-life interactive simulations.
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+### Graphics Simulations
 
-### Executing program
+To further facilitate the understanding process, we will include interactive simulations that let students visualize and experiment with digital circuits. Students can manipulate elements such as logic gates, flip flops, boolean expressions and logic circuits like counters, which would determine how these elements interact in real-time, thus yielding a deep insight to the concept .
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+## Conclusion
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+By an exciting, hands-on, and interactive learning activity, the Digital Electronics Learning Hub will empower the students to master the basics of digital electronics. The objective of our project is to make the complicated simple, to inspire new engineers and computer scientists, and to believe that with proper resources, any one person can understand and appreciate the basics of digital electronics to help pave the way to their future technology success.

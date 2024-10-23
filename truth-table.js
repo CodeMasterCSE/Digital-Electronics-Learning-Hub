@@ -32,7 +32,7 @@ function generateTruthTable() {
 
 function evaluateExpression(expr, values) {
   const tokenize = (str) => {
-    const regex = /\s*(AND|OR|NOT|[A-Z])\s*/g;
+    const regex = /\s*(NAND|NOR|XOR|AND|OR|NOT|[A-Z])\s*/g;
     return (str.match(regex) || []).map(token => token.trim()).filter(token => token !== '');
   };
 
@@ -41,6 +41,9 @@ function evaluateExpression(expr, values) {
       case 'AND': return Number(Boolean(a && b));
       case 'OR': return Number(Boolean(a || b));
       case 'NOT': return Number(!a);
+      case 'NAND': return Number(!(a && b));
+      case 'NOR': return Number(!(a || b));
+      case 'XOR': return Number(Boolean(a ^ b));
       default: throw new Error(`Unknown operator: ${op}`);
     }
   };
@@ -48,7 +51,7 @@ function evaluateExpression(expr, values) {
   const evaluate = (tokens) => {
     const output = [];
     const operators = [];
-    const precedence = { 'NOT': 3, 'AND': 2, 'OR': 1 };
+    const precedence = { 'NOT': 4, 'NAND': 3, 'NOR': 3, 'XOR': 3, 'AND': 2, 'OR': 1 };
 
     const applyTop = () => {
       const op = operators.pop();
@@ -114,4 +117,4 @@ function renderTable(variables, truthTable) {
 
   tableHTML += '</tbody></table>';
   tableContainer.innerHTML = tableHTML;
-}  
+}

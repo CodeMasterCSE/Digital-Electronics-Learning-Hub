@@ -181,3 +181,49 @@ input:checked + .slider:before {
     color: white;
     border-color: #000;
 }
+
+@media (max-width: 767px) {
+    
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gate-options {
+        flex-direction: column;
+        margin-bottom: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .gate-button {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .card-header {
+        padding: 15px;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    .card-header p {
+        font-size: 0.85em;
+    }
+
+}
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truth Table Generator</title>
+  <link rel="stylesheet" href="truth-table.css">
+</head>
+<body>
+  <a href="index.html" class="back-button" style="position: absolute; top: 10px; left: 10px; padding: 10px; background-color: #007BFF; color: white; text-align: center; text-decoration: none; border-radius: 5px;">Back</a>
+  <div class="container">
+    <h1>Truth Table Generator</h1>
+    <div class="input-container">
+      <input type="text" id="expressionInput" placeholder="Enter boolean expression (e.g., A AND B OR NOT C)">
+      <button onclick="generateTruthTable()">Generate</button>
+    </div>
+  <div id="error" class="error"></div>
+  <div id="tableContainer"></div>
+</div>
+
+<script src="truth-table.js"></script>
+</body>
+</html>

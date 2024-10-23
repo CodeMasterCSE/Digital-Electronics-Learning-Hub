@@ -13,33 +13,45 @@
             height: 100vh;
             margin: 0;
             overflow: hidden;
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
         }
 
         .landing-container {
             display: flex;
             justify-content: space-around;
-            width: 100%;
+            width: 80%;
             flex-direction: row;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             overflow: hidden;
         }
 
         .card {
             background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 30%;
-            margin: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            margin: 1.5rem;
             text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         .card-header {
             padding: 1rem;
+            background-color: #000;
+            color: white;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
         }
 
         .card-title {
             font-size: 1.5rem;
-            color: #333;
+            color: #fff;
         }
 
         .card-content {
@@ -55,14 +67,26 @@
             border-radius: 4px;
             font-size: 1rem;
             cursor: pointer;
-            transition: background-color 0.2s;
+            transition: background-color 0.2s, transform 0.2s;
             margin: 1rem 0;
+        }
+
+        button:hover {
+            background-color: #0f0f0f;
+            transform: scale(1.05);
         }
 
         h1 {
             text-align: center;
             width: 100%;
             margin-bottom: 2rem;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 80%;
+            }
         }
     </style>
 </head>
@@ -96,6 +120,16 @@
                 <button onclick="window.location.href='counter.html'">Go to Binary Counter</button>
             </div>
         </div>
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Truth Table</h2>
+            </div>
+            <div class="card-content">
+                <p>Generate truth tables for boolean expressions.</p>
+                <button onclick="window.location.href='truth-table.html'">Go to Truth Table</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
+

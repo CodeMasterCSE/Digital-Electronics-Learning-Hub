@@ -13,11 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     gateButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove active class from all buttons
             gateButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to the clicked button
             button.classList.add('active');
-            updateGateInfo(button.dataset.gate); // Pass the gate value directly
+            updateGateInfo(button.dataset.gate);
         });
     });
 
@@ -49,18 +47,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 input2Group.style.display = 'flex';
                 break;
         }
-        
-        // Reset inputs and outputs to default
+
         resetInputsAndOutputs();
     }
 
     function resetInputsAndOutputs() {
-        input1.checked = false; // Reset Input 1
-        input2.checked = false; // Reset Input 2
-        updateLED(led1, false); // Reset LED 1
-        updateLED(led2, false); // Reset LED 2
-        outputValue.textContent = 'N/A'; // Set output to N/A
-        updateOutput(); // Update output to reflect changes
+        input1.checked = false;
+        input2.checked = false;
+        updateLED(led1, false);
+        updateLED(led2, false);
+        outputValue.textContent = 'N/A';
+        updateOutput();
     }
 
     function updateLED(led, state) {
